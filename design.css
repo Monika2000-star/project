@@ -1,0 +1,248 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+width: 100%;
+min-height: 100vh;
+background: lightblue;
+background-image: url('./pizza.jpg.jpeg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+header{
+height: 60px;
+width: 100%;
+background: black;
+color: blanchedalmond;
+display: flex; 
+align-items: center;
+}
+.container{
+width: 90%;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.nav-list{
+display: none;
+}
+nav ul li {
+list-style: none;
+display: inline;
+margin-right: 20px;
+font-weight: 550;
+}
+.logo{
+font-size: 24px;
+}
+
+main {
+  padding: 20px; /*adding padding around the main content */
+}
+
+h1, h2, h3 {
+  margin: 0 0 10px;
+}
+.hero{
+width: 100%;
+height: auto;
+background: url('');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+color: beige;
+text-align: center;
+padding: 140px 0;
+margin-bottom: 10px;
+}
+.hero h2{
+font-size: 36px;
+margin-bottom: 10px;
+color: blue;
+}
+.hero p{
+font-size: 20px;
+margin-bottom: 10px;
+color: rgba(9, 5, 250, 0.822);
+
+}
+.search-box{
+max-width: 550px;
+margin: 15px auto;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.search-box input{
+width: 70%;
+padding: 10px;
+outline: none;
+border: 0;
+border-radius: 5px 0 0 5px;
+font-size: 1rem;
+border: 1px solid rgb(231, 231, 216);
+}
+.search-box button{
+
+padding: 10px 20px;
+background-color: purple;
+outline: none;
+border: 0;
+border-radius: 0 5px 5px 0;
+font-size: 1rem;
+background: red;
+color: white;
+margin-left: 10px ;
+}
+
+.search-box button:hover{background-color: #ff4c29;
+
+}
+
+
+/* Search Bar */
+.search-section {
+  display: flex; /*align horizontally via flex*/
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#meal-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+
+/* Meal Results */
+#meal-container {
+display: flex;
+flex-wrap: wrap;
+color: rgb(64, 7, 156);
+}
+
+.meal-card {
+background-color: rgb(255, 255, 255);
+border: 1px solid #ddd;
+padding: 15px;
+margin: 10px;
+width: 200px;
+text-align: center;
+cursor: pointer;
+}
+
+.meal-card img {
+max-width: 100%;
+border-radius: 5px;
+}
+
+#meal-details img {
+max-width: 300px;
+}
+
+/* Recipe section */
+.recipes{
+padding: 50px 0;
+
+}
+.recipes h1 {
+text-align: center;
+margin-bottom: 30px;
+font-size: 28px;
+}
+.recipes p{
+  font-size: 15px;
+  }
+  
+.recipe-section{
+width: 90%;
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+column-gap: 10px;
+}
+.recipe-card{
+background: rgb(226, 206, 226);
+margin: 30px 10px;
+border-radius: 10px;
+border: 1px solid rgb(226, 217, 199);
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.recipe-card img{
+width: 100%;
+height: 200px;
+object-fit: cover;
+}
+.recipe-card h2{
+font-size: 22px;
+padding: 20px;
+color: red;
+box-shadow: #ff4c29;
+}
+.recipe-card p{
+font-size: 18px;
+padding: 20px;
+color: rgb(63, 15, 196);
+}
+/*.recipe-card a{
+display: block;
+text-align: center;
+text-decoration: none;
+background: rgba(0, 0, 0, 0.788);
+color: bisque;
+padding: 15px 0;
+cursor: pointer;
+}
+*/
+footer{
+background: rgba(0, 0, 0, 0.788);
+padding: 20px 0;
+color: aliceblue;
+text-align: center;
+}
+.menu-icon{
+font-size: 24px;
+padding: 20px;
+text-align: right;
+cursor: pointer;
+display: block;
+}
+
+/* .......... Media Query .........*/
+
+@media only screen and (min-width: 768px){
+.menu-icon{
+display: none;
+}
+.nav-list{
+display: block;
+}
+
+}
+@media only screen and (max-width: 768px){
+.hero h2{
+font-size: 28px;
+}
+.hero p{
+font-size: 15px;
+}
+
+}
+
+.modal fade
+{
+  padding: 0 0;
+}
+.modal fade button
+{
+background-color: blue;
+}

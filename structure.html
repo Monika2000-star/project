@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food Recipe - Cooking made easy</title>
+    <meta name="title" content="food Recipe - Cooking made easy">
+    <meta name="description" content="This is a recipe made by Monika">
+    <link rel="stylesheet" href="./design.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+  <header>
+
+    <div class="container">
+      <h1 class="logo">Delicous Recipe</h1>
+     <!--
+      <nav>
+        <div class="menu-icon">&#9776;</div>
+          <ul class="nav-list">
+          <li>Home</li>
+          <li>About</li>
+          <li>Recipe</li>
+          <li>Contact</li>
+      </ul>
+      </nav>
+      -->
+  </div>
+</header>
+
+
+<main>
+
+  <!-- .......Hero section for meal search ....... -->
+<section class="hero">
+  <div class="hero-section">
+      <h2>Welcome to our Recipe collection !</h2>
+
+      <form action="#" class="search-box">
+          <input type="text" id="meal-input" placeholder="Search Recipe">
+          <button type="submit" onclick="searchMeal()" >Search</button>
+      </form>
+  </div>
+</section>
+
+<!-- Meal Results -->
+<section id="meal-results">
+  <h2>Meal Results</h2>
+  <div id="meal-container">The meal Details show in this Section</div>
+</section>
+
+<!-- Meal Details -->
+<section id="meal-details" style="display: none;">
+  <h2 id="meal-title"></h2>
+  <img id="meal-image" src="https://media.istockphoto.com/id/2157551787/photo/closeup-of-couple-eating-delicious-breakfast-together-in-restaurant.jpg?s=612x612&w=0&k=20&c=UJEPp2aoBBJY62DHPp3FyiAoaxa1qPSepVf-042luxE=" alt="Meal Image" />
+  <h3>Ingredients:</h3>
+  <ul id="meal-ingredients"></ul>
+  <h3>Instructions:</h3>
+  <p id="meal-instructions"></p>
+</section>
+
+<!-- ........for demo purpose of Recipe section with cards......... -->
+<section class="recipes">
+  <p><b><h3>See Some mouth watering recipes to satisfy your carving.</h3></b></p>
+  <h1 style="color: blue;">Some Recipes</h1>
+  <div class="recipe-section">
+    <div class="recipe-card">
+      <img src="./1.jpg.jpeg" alt="Error">
+      <h2>PORRIDGE</h2>
+      <p>Porridge takes just a few minutes to make in a saucepan, and even less in a microwave. Instead of adding sugar or salt, scatter with a handful (80g) of fresh berries or other fruit to get one of your 5-a-day at the same time.</p>
+      
+    </div>
+    <div class="recipe-card">
+      <img src="./pizza.jpg.jpeg" alt="error">
+      <h2>PIZZA</h2>
+      <p>Toast wholemeal pitta breads lightly (for ultimate speed, do this in a toaster while you pre-heat the grill). Spread each pitta with tomato puree or passata. Top with a little reduced-fat mozzarella, torn from a ball, and some sliced tomato. Optional extra toppings are tinned sweetcorn (no added salt or sugar), sliced spring onion or sliced button mushrooms. Place under the pre heated grill for 3 minutes or until the cheese is melted.</p>
+    
+    </div>
+    <div class="recipe-card">
+      <img src="./5.jpg.jpeg" alt="">
+      <h2>SALAD</h2>
+      <p>Fresh tuna should only be cooked briefly, so is perfect for meals in a hurry. Get your griddle pan or non-stick frying pan very hot and cook each steak for one to two minutes each side. It should still be pink or red inside. Serve with green salad, or with the pea and mint couscous above.</p>
+  
+    </div>
+    <div class="recipe-card">
+      <img src="./4.jpg.jpeg" alt="Error">
+      <h2>RICE</h2>
+      <p>Heat a teaspoon of oil in a frying pan. Using a high heat, fry thinly sliced peppers or mushrooms, frozen peas, beansprouts, and sliced spring onions for 2-3 minutes. Stir in some leftover or ready-cooked rice and stir fry for a couple of minutes longer or until the rice is piping hot. Add sesame seeds and hot chilli sauce, if you want to liven it up a bit.</p>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="mealDetailsModal" tabindex="-1" role="dialog" aria-labelledby="mealDetailsLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mealDetailsLabel">Recipe Details</h5>
+        <button type="button" class="close btn-warning" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- This will be filled dynamically -->
+        <h3 id="mealTitle"></h3>
+        <img id="mealImage" src="./4.jpg.jpeg" alt="Error" class="img-fluid">
+        <p id="mealInstructions"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div>
+    <p>&copy;2024 Delicious Recipes</p>
+  </div>
+</footer> 
+      </main>
+      <script src="./mind.js"></script>
+</body>
+</html>
